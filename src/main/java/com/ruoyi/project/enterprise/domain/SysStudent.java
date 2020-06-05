@@ -31,8 +31,8 @@ public class SysStudent extends BaseEntity
     @Excel(name = "性别", readConverterExp = "0=男,1=女,2=未知")
     private String studentSex;
 
-    /** 状态（0正常 1停用） */
-    @Excel(name = "状态", readConverterExp = "0=正常,1=停用")
+    /** 状态（0=在校生,1=走读生,2=毕业生） */
+    @Excel(name = "状态", readConverterExp = "0=在校生,1=走读生,2=毕业生")
     private String studentStatus;
 
     /** 生日 */
